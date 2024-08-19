@@ -3,12 +3,12 @@ name: GitHubActions Job Schedule
 on: 
   workflow_dispatch:
   schedule:
-    - cron: '35 13 * * *'
+    - cron: '0 */1 * * 1-5'
 
 jobs:
   test_job:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/develop'
     steps:
       - name: Log Message
         run: echo "This is a test log message"
