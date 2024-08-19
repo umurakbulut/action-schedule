@@ -2,9 +2,8 @@ name: GitHubActions Job Schedule
 
 on: 
   schedule:
-    - cron: '22 11 * * 1-5'
+    - cron: '24 8 * * 1-5'
   workflow_dispatch:
-
 
 jobs:
   test_job:
