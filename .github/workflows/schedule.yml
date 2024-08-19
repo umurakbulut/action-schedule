@@ -3,12 +3,12 @@ name: GitHubActions Job Schedule
 on: 
   workflow_dispatch:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '40 11 * * 1-5'
 
 jobs:
   test_job:
     runs-on: ubuntu-latest
     steps:
       - name: Log Message
-        run: echo "This is a test log message"
+        run: echo "This is a test log message 2"
 
