@@ -1,0 +1,13 @@
+name: GitHubActions Job Schedule
+
+on: 
+  schedule:
+    - cron: '5 11 * * *'
+
+jobs:
+  test_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log Message
+        run: echo "This is a test log message"
+
